@@ -1,28 +1,13 @@
-console.log(x);
-var x=5;
-console.log(x);
-x=6;
-console.log(x);
-
-x = "Hi";
-console.log(x);
-
-
-// console.log(y);
-
-
-let y=6;
-console.log(y);
-y=7;
-console.log(y);
-y = "Yo";
-console.log(y);
-
-function foo(x) {
-    var sike = 1;
-    document.write(x, "\n");
+function bun(n) {
+    for (let num = 0; num < n; num++) {
+        console.log("Running");
+        console.log("Done!");
+    }
 }
-foo(12);
-foo("Hello!!");
-// console.log(sike);
-// document.createElement()
+
+async function foo() {
+    let a = bun(25000);
+    console.log("foo executed!");
+}
+
+foo();
